@@ -6,14 +6,14 @@
  */
 class CaosJS {
   constructor(options = {}) {
-    const { selector } = options
-    if (typeof selector === "string") {
-      options.selector = [selector]
+    const { selectors } = options
+    if (typeof selectors === "string") {
+      options.selectors = [selectors]
     }
 
     // default config
     this.config = {
-      selector: [], // default selector
+      selectors: [], // default selectors
       maxRotation: 2, // max degrees rotation
       minRotation: -2, // min degrees rotation
       allowFrequency: false, // allow frequency to appy effect
@@ -23,8 +23,8 @@ class CaosJS {
       ...options, // user config
     }
 
-    // set interval to apply effect (delay)
-    setInterval(() => {
+    // set timeout to apply effect (delay)
+    setTimeout(() => {
       this.init()
     }, this.config.delay)
   }
@@ -40,15 +40,17 @@ class CaosJS {
   }
 
   applyEffect() {
-    const elements = document.querySelectorAll(this.config.selector)
-    elements.forEach(element => {
-      if (this.config.allowFrequency && this.config.applyFrequencyToAllElements) {
-        if (Math.random() < this.config.frequency) {
+    this.config.selectors.forEach(selector => {
+      const elements = document.querySelectorAll(selector)
+      elements.forEach(element => {
+        if (this.config.allowFrequency && this.config.applyFrequencyToAllElements) {
+          if (Math.random() < this.config.frequency) {
+            this.caosifyElement(element)
+          }
+        } else {
           this.caosifyElement(element)
         }
-      } else {
-        this.caosifyElement(element)
-      }
+      })
     })
   }
 
@@ -64,4 +66,4 @@ class CaosJS {
 }
 
 // export module
-module.exports = CaosJS
+module.exports= CaosJS
