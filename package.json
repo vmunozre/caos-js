@@ -1,6 +1,6 @@
 {
   "name": "caos-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "devDependencies": {
     "webpack": "5.97.1",
@@ -25,5 +25,5 @@
     "url": "https://github.com/vmunozre/caos-js/issues"
   },
   "homepage": "https://github.com/vmunozre/caos-js#readme",
-  "description": ""
+  "description": "A lightweight JavaScript library to add chaotic and dynamic rotation effects to HTML elements on your webpage"
 }
