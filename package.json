@@ -1,0 +1,26 @@
+{
+  "name": "caos-js",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmunozre/caos-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "rotate",
+    "caos",
+    "troll"
+  ],
+  "author": "Victor Reiner (vmunozre)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmunozre/caos-js/issues"
+  },
+  "homepage": "https://github.com/vmunozre/caos-js#readme",
+  "description": ""
+}
