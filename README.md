@@ -6,7 +6,7 @@ A lightweight JavaScript library to add chaotic and dynamic rotation effects to 
 
 - **GitHub**: [https://github.com/vmunozre/caos-js](https://github.com/vmunozre/caos-js)
 - **License**: MIT
-- **Version**: 2025
+- **Version**: 0.1.1
 
 ## Table of Contents
 - [Installation](#installation)
@@ -26,7 +26,7 @@ npm install caos-js
 Or include it directly in your project via a `<script>` tag:
 
 ```html
-<script src="../caos.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/caos-js"></script>
 ```
 
 ## Usage
@@ -81,7 +81,7 @@ const caos = new CaosJS({
 <span>Element 2</span>
 <div id="test-id">Element 3</div>
 
-<script src="caos-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/caos-js"></script>
 <script>
   const caos = new CaosJS({
     selectors: ['.chaotic', 'span', '#test-id'],
