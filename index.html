@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaosJS Demo</title>
+  <title>Caos JS Demo</title>
   <style>
     .test {
       width: 100px;
@@ -20,12 +20,11 @@
   <div class="test">A</div>
   <div class="test">B</div>
   <div class="test">C</div>
+
   <script src="./dist/bundle.js"></script>
   <script>
-    const CaosJS = require('CaosJs');
-
-    const caos = new TiltEffect({
-      selector: ['.test'],
+    const caos = new CaosJS({
+      selectors: ['.test'],
       maxRotation: 10,
       frequency: 0.7,
     });
